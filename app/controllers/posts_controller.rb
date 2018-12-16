@@ -25,7 +25,7 @@ class PostsController < ApplicationController
     @post = Post.create(post_params)
     @post.save
     redirect_to post_path(@post)
-    
+
   end
 
   def edit
