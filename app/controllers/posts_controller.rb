@@ -24,7 +24,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     @post.save
-    redirect_to post_path(@post)
+    render :show
 
   end
 
